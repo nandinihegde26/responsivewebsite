@@ -1,0 +1,171 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandini's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome-section">
+        <h1>Welcome to Nandini's Portfolio</h1>
+        <p>CS-AIML Engineering Student | Developer | Designer</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-tile">
+            <a href="https://github.com/nandinihegde26/pythonprogram" target="_blank">Python Programs</a>
+        </div>
+        <div class="project-tile">
+            <a href="https://github.com/nandinihegde26/currencyconverter" target="_blank">Currency Converter</a>
+        </div>
+        <div class="project-tile">
+            <a href="https://github.com/nandinihegde26/rollthedice" target="_blank">Roll the Dice</a>
+        </div>
+        <div class="project-tile">
+            <a href="https://github.com/nandinihegde26/toss-the-coin" target="_blank">Toss the Coin</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>Feel free to <a href="mailto:nandini@example.com">email me</a> or connect via GitHub.</p>
+        <a id="profile-link" href="https://github.com/nandinihegde26" target="_blank">GitHub Profile</a>
+    </section>
+</body>
+</html>
+
+
+CSS
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+#navbar ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Welcome Section */
+#welcome-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#welcome-section p {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Projects Section */
+#projects {
+    padding: 50px 0;
+    background-color: #e0e0e0;
+    text-align: center;
+}
+
+#projects h2 {
+    margin-bottom: 20px;
+}
+
+.project-tile {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.project-tile a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.project-tile a:hover {
+    color: #0056b3;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px;
+    background-color: #d4d4d4;
+    text-align: center;
+}
+
+#profile-link {
+    font-size: 1.2em;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#profile-link:hover {
+    color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .project-tile {
+        width: 90%;
+    }
+}
