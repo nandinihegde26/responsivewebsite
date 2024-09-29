@@ -1,0 +1,112 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this survey to help us improve our service.</p>
+    
+    <form id="survey-form">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+        
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        
+        <label for="number" id="number-label">Age:</label>
+        <input type="number" id="number" min="0" max="120" placeholder="Enter your age" required>
+        
+        <label for="dropdown">Select your favorite programming language:</label>
+        <select id="dropdown" required>
+            <option value="">--Please choose an option--</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+        </select>
+        
+        <fieldset>
+            <legend>How did you hear about us?</legend>
+            <label><input type="radio" name="referral" value="friend"> A friend</label>
+            <label><input type="radio" name="referral" value="internet"> Internet</label>
+            <label><input type="radio" name="referral" value="advertisement"> Advertisement</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Which services are you interested in?</legend>
+            <label><input type="checkbox" value="web-development"> Web Development</label>
+            <label><input type="checkbox" value="app-development"> App Development</label>
+            <label><input type="checkbox" value="data-analysis"> Data Analysis</label>
+        </fieldset>
+
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" rows="4" placeholder="Any other feedback..."></textarea>
+        
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
+
+
+
+CSS
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
