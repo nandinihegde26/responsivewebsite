@@ -1,0 +1,87 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main id="main">
+        <h1 id="title">Dr. Norman Borlaug</h1>
+        
+        <figure id="img-div">
+            <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/4/49/Norman_Borlaug.jpg" alt="Dr. Norman Borlaug">
+            <figcaption id="img-caption">Dr. Norman Borlaug, the father of the Green Revolution.</figcaption>
+        </figure>
+
+        <div id="tribute-info">
+            <p>Dr. Norman Borlaug was an American agronomist and humanitarian who is credited with saving over a billion people from starvation through his development of high-yielding varieties of cereal grains.</p>
+            <p>His work led to the establishment of agricultural practices that significantly increased food production worldwide, especially in developing countries.</p>
+            <p>He was awarded the Nobel Peace Prize in 1970 for his efforts to alleviate hunger and promote sustainable agriculture.</p>
+        </div>
+
+        <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Learn more about Dr. Norman Borlaug</a>
+    </main>
+</body>
+</html>
+
+
+
+
+CSS
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#main {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#img-div {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image within the parent */
+    border-radius: 5px;
+}
+
+#img-caption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#tribute-info {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#tribute-link {
+    display: block;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+}
+
+#tribute-link:hover {
+    text-decoration: underline;
+}
