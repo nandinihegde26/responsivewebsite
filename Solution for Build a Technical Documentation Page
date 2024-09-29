@@ -1,0 +1,175 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Getting_Started">Getting Started</a></li>
+            <li><a class="nav-link" href="#Syntax_and_Usage">Syntax and Usage</a></li>
+            <li><a class="nav-link" href="#Advanced_Topics">Advanced Topics</a></li>
+            <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Documentation Section -->
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>This documentation covers the basics of how to use our programming language effectively.</p>
+            <p>Understanding the fundamentals is key to mastering the language.</p>
+        </section>
+
+        <section id="Getting_Started" class="main-section">
+            <header>Getting Started</header>
+            <p>Before writing your first program, ensure you have the necessary tools installed:</p>
+            <ul>
+                <li>Text editor</li>
+                <li>Command-line interface</li>
+                <li>Compiler or interpreter</li>
+            </ul>
+            <p>Here’s how to create your first "Hello World" program:</p>
+            <code>print("Hello World")</code>
+            <p>Run this command to execute your script:</p>
+            <code>python hello_world.py</code>
+        </section>
+
+        <section id="Syntax_and_Usage" class="main-section">
+            <header>Syntax and Usage</header>
+            <p>The syntax of our language is simple and user-friendly. Below is an example of a basic function:</p>
+            <code>def my_function():</code>
+            <p>Indentation is important in this language. Here's a loop example:</p>
+            <code>for i in range(5):</code>
+            <ul>
+                <li>Indentation levels should be consistent</li>
+                <li>Ensure you use the correct keywords</li>
+            </ul>
+        </section>
+
+        <section id="Advanced_Topics" class="main-section">
+            <header>Advanced Topics</header>
+            <p>Once you are comfortable with the basics, you can explore more advanced topics:</p>
+            <ul>
+                <li>Object-Oriented Programming</li>
+                <li>Error handling</li>
+                <li>File I/O</li>
+            </ul>
+            <p>Here’s an example of exception handling:</p>
+            <code>try:</code>
+            <p>Advanced topics allow you to build more complex programs efficiently.</p>
+        </section>
+
+        <section id="Conclusion" class="main-section">
+            <header>Conclusion</header>
+            <p>This documentation provided an overview of basic and advanced topics to help you get started with programming in this language.</p>
+            <p>Continue exploring the language by building projects and expanding your knowledge.</p>
+        </section>
+    </main>
+</body>
+</html>
+
+
+CSS
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#navbar header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#navbar ul {
+    list-style-type: none;
+}
+
+#navbar ul li {
+    margin: 15px 0;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Documentation Styles */
+#main-doc {
+    margin-left: 270px; /* To avoid overlapping with navbar */
+    padding: 20px;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+.main-section header {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Code Blocks */
+code {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #333;
+    font-family: 'Courier New', monospace;
+}
+
+/* List Styles */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    #main-doc {
+        margin-left: 0;
+    }
+
+    #navbar ul li {
+        display: inline;
+        margin-right: 15px;
+    }
+}
